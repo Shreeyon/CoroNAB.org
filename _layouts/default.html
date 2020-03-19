@@ -23,7 +23,7 @@
     Site URL Is: {{site.baseurl}}
     {{page.url}}
     <header class="page-header" role="banner">
-      <img src="{{ site.baseurl }}/assets/corona_new.png"/>
+      <img class="logo" src="{{ site.baseurl }}/assets/corona_new.png"/>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
