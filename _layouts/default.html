@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    Site URL Is: {{site.url}}
+    Site URL Is: {{site.baseurl}}
     {{page.url}}
     <header class="page-header" role="banner">
-      <img src="{{ site.url }}/assets/corona_logo.png"/>
+      <img src="{{ site.baseurl }}/assets/corona_logo.png"/>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
